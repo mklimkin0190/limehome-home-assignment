@@ -1,0 +1,48 @@
+<div class="wrapper">
+  <h1>Your check-in details</h1>
+  <form class="form">
+    <div class="accordion">
+      <div
+        *ngFor="let group of formGroups; let i = index;"
+        class="form__group"
+        [ngClass]="group.open ? '' : 'form__group-closed'"
+      >
+        <fieldset>
+          <legend
+            class="accordion__header"
+            (click)="onAccordionHeaderClick(i)"
+          >
+            <span>{{group.name}}</span>
+            <button
+              aria-label="Toggle form group"
+              class="arrow"
+              (click)="$event.preventDefault()"
+            >
+            </button>
+          </legend>
+          <div class="accordion__content">
+            <input
+              *ngFor="let input of group.fields"
+              [type]="input.type"
+              [ariaLabel]="input.label"
+              [placeholder]="input.placeholder || input.label"
+              [ngClass]="input.isHalfLine ? ['input__half', input.renderSide] : ''"
+              [attr.inputmode]="input.inputmode || 'text'"
+            >
+          </div>
+        </fieldset>
+        <div
+          *ngIf="group.note"
+          class="group__note"
+          [ngClass]="group.open ? '' : 'hidden'"
+        >
+          {{group.note}}
+        </div>
+      </div>
+    </div>
+    <div class="form__submit">
+      <button>Save</button>
+    </div>
+  </form>
+</div>
+
