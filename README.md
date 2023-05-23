@@ -14,4 +14,4 @@ npm start
 3. Custom error messages
 4. Zip Code is alphanumeric (as opposed to numeric) to support alphanumeric postal code
 5. Tests
-
+6. Optimizations (including PWA optimizations)
