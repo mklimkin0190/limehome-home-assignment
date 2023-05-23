@@ -40,6 +40,9 @@
     border-radius: 6px;
     border: 1px solid #717171;
     vertical-align: middle;
+    &::placeholder {
+      font-size: 16px;
+    }
     &:last-child {
       margin-bottom: 0;
     }

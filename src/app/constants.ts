@@ -39,7 +39,7 @@ export const ADDRESS_FORM_FIELDS: FormField[] = [
   },
   {
     type: 'text',
-    label: 'City',
+    label: 'City Name',
   },
   {
     type: 'text',
