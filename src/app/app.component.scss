@@ -22,7 +22,8 @@
       .arrow {
         transform: rotate(180deg);
       }
-      .accordion__content {
+      .accordion__content,
+      .group__note {
         display: none;
       }
     }
