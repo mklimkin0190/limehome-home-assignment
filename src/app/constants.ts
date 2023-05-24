@@ -54,7 +54,7 @@ export const PAYMENT_FORM_FIELDS: FormField[] = [
     inputmode: 'numeric',
   },
   {
-    type: 'date',
+    type: 'month',
     label: 'Expiry Date',
     isHalfLine: true,
     renderSide: Side.Left,

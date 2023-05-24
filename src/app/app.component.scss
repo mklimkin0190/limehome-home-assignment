@@ -52,7 +52,7 @@
         margin-right: 14px;
       }
     }
-    &[type="date"] {
+    &[type="month"] {
       // fix for iphone issue when the date field is small
       min-width: calc(50% - 19px);
       height: 53px;
